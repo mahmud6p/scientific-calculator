@@ -9,3 +9,19 @@ def main():
 
 if __name__ == "__main__":
     main()
+def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
+def main():
+    print("Welcome to Scientific Calculator")
+    choice = int(input("Enter choice (1-Addition, 2-Subtraction): "))
+    a = float(input("Enter first number: "))
+    b = float(input("Enter second number: "))
+
+    if choice == 1:
+        print("Result:", add(a, b))
+    elif choice == 2:
+        print("Result:", subtract(a, b))
