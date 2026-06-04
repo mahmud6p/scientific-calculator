@@ -52,3 +52,9 @@ def main():
         print("Result:", multiply(a, b))
     elif choice == 4:
         print("Result:", divide(a, b))
+import math
+
+def square_root(x):
+    if x < 0:
+        return "Error: Negative number"
+    return math.sqrt(x)
