@@ -58,3 +58,5 @@ def square_root(x):
     if x < 0:
         return "Error: Negative number"
     return math.sqrt(x)
+def power(a, b):
+    return math.pow(a, b)
