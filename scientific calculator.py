@@ -60,3 +60,9 @@ def square_root(x):
     return math.sqrt(x)
 def power(a, b):
     return math.pow(a, b)
+def trig_functions(angle):
+    return {
+        "sin": math.sin(math.radians(angle)),
+        "cos": math.cos(math.radians(angle)),
+        "tan": math.tan(math.radians(angle))
+    }
