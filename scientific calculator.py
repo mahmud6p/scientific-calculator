@@ -104,3 +104,7 @@ def logarithm(a, base=10):
     return math.log(a, base)
 def exponential(a):
     return math.exp(a)
+def factorial(n):
+    if n < 0:
+        return "Error: Negative number"
+    return math.factorial(n)
