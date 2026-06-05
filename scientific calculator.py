@@ -97,3 +97,8 @@ def main():
         print("Results:", trig_functions(angle))
     else:
         print("Invalid choice")
+
+def logarithm(a, base=10):
+    if a <= 0:
+        return "Error: Non-positive number"
+    return math.log(a, base)
