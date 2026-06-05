@@ -108,3 +108,12 @@ def factorial(n):
     if n < 0:
         return "Error: Negative number"
     return math.factorial(n)
+last_result = None
+
+def save_result(value):
+    global last_result
+    last_result = value
+    return "Result saved!"
+
+def recall_result():
+    return last_result if last_result is not None else "No result saved yet"
