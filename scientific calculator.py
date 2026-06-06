@@ -117,3 +117,9 @@ def save_result(value):
 
 def recall_result():
     return last_result if last_result is not None else "No result saved yet"
+import math
+
+def logarithm(a, base=10):
+    if a <= 0:
+        return "Error: Non-positive number"
+    return math.log(a, base)
