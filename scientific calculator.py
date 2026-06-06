@@ -123,3 +123,5 @@ def logarithm(a, base=10):
     if a <= 0:
         return "Error: Non-positive number"
     return math.log(a, base)
+def exponential(a):
+    return math.exp(a)
