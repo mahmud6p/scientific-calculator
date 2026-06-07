@@ -138,3 +138,10 @@ def save_result(value):
 
 def recall_result():
     return last_result if last_result is not None else "No result saved yet"
+import tkinter as tk
+from tkinter import messagebox
+import math
+
+root = tk.Tk()
+root.title("Scientific Calculator")
+root.geometry("400x600")
