@@ -177,3 +177,9 @@ tk.Button(root, text="sin", width=5, height=2,
           command=lambda: entry.insert(tk.END, "math.sin(")).grid(row=5, column=2)
 tk.Button(root, text="cos", width=5, height=2,
           command=lambda: entry.insert(tk.END, "math.cos(")).grid(row=5, column=3)
+tk.Button(root, text="C", width=5, height=2,
+          command=lambda: entry.delete(0, tk.END)).grid(row=6, column=0)
+tk.Button(root, text="=", width=10, height=2,
+          command=calculate).grid(row=6, column=1, columnspan=2)
+
+root.mainloop()
