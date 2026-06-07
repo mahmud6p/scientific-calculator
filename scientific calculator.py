@@ -161,3 +161,19 @@ buttons = [
 for (text,row,col) in buttons:
     tk.Button(root, text=text, width=5, height=2,
               command=lambda t=text: add_digit(t)).grid(row=row, column=col)
+def calculate():
+    try:
+        result = eval(entry.get())
+        entry.delete(0, tk.END)
+        entry.insert(tk.END, str(result))
+    except Exception as e:
+        messagebox.showerror("Error", str(e))
+
+tk.Button(root, text="sqrt", width=5, height=2,
+          command=lambda: entry.insert(tk.END, "math.sqrt(")).grid(row=5, column=0)
+tk.Button(root, text="pow", width=5, height=2,
+          command=lambda: entry.insert(tk.END, "math.pow(")).grid(row=5, column=1)
+tk.Button(root, text="sin", width=5, height=2,
+          command=lambda: entry.insert(tk.END, "math.sin(")).grid(row=5, column=2)
+tk.Button(root, text="cos", width=5, height=2,
+          command=lambda: entry.insert(tk.END, "math.cos(")).grid(row=5, column=3)
