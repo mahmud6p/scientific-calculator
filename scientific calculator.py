@@ -196,3 +196,13 @@ def cm_to_inch(cm):
 
 def celsius_to_fahrenheit(c):
     return (c * 9/5) + 32
+def complex_operations(a, b):
+    return {
+        "add": a + b,
+        "subtract": a - b,
+        "multiply": a * b,
+        "divide": a / b if b != 0 else "Error: Division by zero"
+    }
+
+# Example usage:
+# complex_operations(complex(2,3), complex(1,4))
