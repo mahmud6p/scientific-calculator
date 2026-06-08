@@ -190,3 +190,9 @@ def add_to_history(expression, result):
 
 def show_history():
     return history if history else "No history yet"
+
+def cm_to_inch(cm):
+    return cm / 2.54
+
+def celsius_to_fahrenheit(c):
+    return (c * 9/5) + 32
