@@ -206,3 +206,13 @@ def complex_operations(a, b):
 
 # Example usage:
 # complex_operations(complex(2,3), complex(1,4))
+root.configure(bg="black")
+
+entry = tk.Entry(root, width=20, font=("Consolas", 18),
+                 bg="black", fg="lime", insertbackground="white")
+entry.grid(row=0, column=0, columnspan=4)
+
+# Example button with hacker theme
+tk.Button(root, text="√", width=5, height=2,
+          bg="purple", fg="white",
+          command=lambda: entry.insert(tk.END, "math.sqrt(")).grid(row=5, column=0)
