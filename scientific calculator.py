@@ -183,3 +183,10 @@ tk.Button(root, text="=", width=10, height=2,
           command=calculate).grid(row=6, column=1, columnspan=2)
 
 root.mainloop()
+history = []
+
+def add_to_history(expression, result):
+    history.append(f"{expression} = {result}")
+
+def show_history():
+    return history if history else "No history yet"
