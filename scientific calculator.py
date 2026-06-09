@@ -216,3 +216,7 @@ entry.grid(row=0, column=0, columnspan=4)
 tk.Button(root, text="√", width=5, height=2,
           bg="purple", fg="white",
           command=lambda: entry.insert(tk.END, "math.sqrt(")).grid(row=5, column=0)
+
+
+main_frame = tk.Frame(root, bg="black", padx=20, pady=20)
+main_frame.place(relx=0.5, rely=0.5, anchor="center")
