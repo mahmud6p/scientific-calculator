@@ -236,3 +236,6 @@ for (text,row,col) in buttons:
     tk.Button(main_frame, text=text, width=5, height=2,
               bg="purple", fg="white",
               command=lambda t=text: entry.insert(tk.END, t)).grid(row=row, column=col, padx=5, pady=5)
+
+
+main_frame.config(highlightbackground="lime", highlightthickness=2)
