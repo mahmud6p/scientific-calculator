@@ -220,3 +220,7 @@ tk.Button(root, text="√", width=5, height=2,
 
 main_frame = tk.Frame(root, bg="black", padx=20, pady=20)
 main_frame.place(relx=0.5, rely=0.5, anchor="center")
+
+entry = tk.Entry(main_frame, width=20, font=("Consolas", 18),
+                 bg="black", fg="lime", insertbackground="white")
+entry.grid(row=0, column=0, columnspan=4, pady=10)
