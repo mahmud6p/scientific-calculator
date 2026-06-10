@@ -261,3 +261,15 @@ history_text.pack(side=tk.LEFT)
 scrollbar = tk.Scrollbar(history_frame, command=history_text.yview)
 scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
 history_text.config(yscrollcommand=scrollbar.set)
+
+def calculate():
+    try:
+        result = eval(entry.get())
+        add_to_history(entry.get(), result)
+        entry.delete(0, tk.END)
+        entry.insert(tk.END, str(result))
+        history_text.insert(tk.END, f"{entry.get()} = {result}\n")
+    except ZeroDivisionError:
+        messagebox.showerror("Error", "Division by zero is not allowed")
+    except Exception as e:
+        messagebox.showerror("Error", f"Invalid input: {e}")
