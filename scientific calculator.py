@@ -239,3 +239,9 @@ for (text,row,col) in buttons:
 
 
 main_frame.config(highlightbackground="lime", highlightthickness=2)
+
+
+root.resizable(True, True)
+root.grid_rowconfigure(0, weight=1)
+root.grid_columnconfigure(0, weight=1)
+
