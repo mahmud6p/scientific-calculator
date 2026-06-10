@@ -250,3 +250,14 @@ def resize_font(event):
     entry.config(font=("Consolas", new_size))
 
 root.bind("<Configure>", resize_font)
+
+history_frame = tk.Frame(main_frame, bg="black")
+history_frame.grid(row=7, column=0, columnspan=4, pady=10)
+
+history_text = tk.Text(history_frame, height=5, width=30,
+                       bg="black", fg="lime", font=("Consolas", 12))
+history_text.pack(side=tk.LEFT)
+
+scrollbar = tk.Scrollbar(history_frame, command=history_text.yview)
+scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
+history_text.config(yscrollcommand=scrollbar.set)
