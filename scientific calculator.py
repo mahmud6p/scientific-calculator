@@ -245,3 +245,8 @@ root.resizable(True, True)
 root.grid_rowconfigure(0, weight=1)
 root.grid_columnconfigure(0, weight=1)
 
+def resize_font(event):
+    new_size = max(12, int(event.width / 25))
+    entry.config(font=("Consolas", new_size))
+
+root.bind("<Configure>", resize_font)
